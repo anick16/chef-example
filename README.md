@@ -6,8 +6,19 @@ For setting up the cookbook structure and handling the chef dependencies Berkshe
 
 Couple of test cases has been written with InSpec to ensures the correct setup of the instance.
 
+Prerequisites:
+
+  virtualbox
+  
+  chef development kit
+  
+  vagrant
+
+
 Run below command to provision the instance:
+
 kitchen converge
 
 Run below command to test the instance set up:
+
 kitchen verify
