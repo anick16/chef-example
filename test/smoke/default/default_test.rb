@@ -20,3 +20,9 @@ end
 describe file('/etc/nginx/nginx.conf') do
   it { should exist }
 end
+
+# inde.html should have matching words
+describe file('/usr/share/nginx/html/index.html') do
+  it { should exist }
+  its(:content) { should match(/Hello world/) }
+end
