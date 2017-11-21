@@ -19,6 +19,7 @@ suites:
   - name: default
     run_list:
       - recipe[chef-example::default]
+      - recipe[chef-example::install_nginx]
     verifier:
       inspec_tests:
         - test/smoke/default

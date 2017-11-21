@@ -15,3 +15,9 @@ service 'nginx' do
   supports status: true, restart: true, reload: true
   action :enable
 end
+
+cookbook_file "/usr/share/nginx/html/index.html" do
+  source "index.html"
+  mode "0644"
+end
+
